@@ -1,0 +1,31 @@
+/*
+ Version: 0.1.2a
+  Author: Felipe Nunes
+ Website: http://www.willpower.art.br
+  github: http://willpowerart.github.io
+*/
+
+* {margin:0;padding:0;box-sizing:border-box;}
+fieldset {border:0;}
+ul,li {list-style:none;}
+label {display:block;}
+input,.lbl {vertical-align: middle;}
+
+body {font-family:helvetica,arial,sans-serif;} 
+#main-header,#main-footer,.test-area {margin:0 0 10px;}
+
+header,main {padding:10px;border-bottom:1px solid #ccc;}
+h1 {background:url(../images/willpower.png) no-repeat 0 0;padding-left:235px;height:47px;line-height:47px;}
+
+.it-fs:first-child {float:left;width:70%;}
+.it-fs:nth-child(2) {overflow:hidden;}
+.it-fs:nth-child(2) label {margin:10px 0 0;}
+.it-fs:nth-child(2) label:first-child {margin:0;}
+
+small {color:#999;}
+
+.url-link {font-size:2em;width:95%;}
+
+.box {display:inline-block;vertical-align:top;}
+iframe {border:1px solid #000;}
+.test-area {width:100%;overflow:auto;white-space:nowrap;}
