@@ -1,4 +1,4 @@
-willpower responsive test v0.1.1a
+willpower responsive test
 ===============
 
 v0.1.2a - valid html5
