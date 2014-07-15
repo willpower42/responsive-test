@@ -57,18 +57,10 @@
 								</ul>
 							</fieldset> -->
 						</form>
-						<div class="test-area">
-							<div class="box">
-								<h2>iPhone <small class="size-iphone">(320 x 500)</small></h2>
-								<iframe id="iphone" data-ng-src="{{urlLink}}" width="335" height="500"></iframe>
-							</div>
-							<div class="box">
-								<h2>Tablet <small class="size-tablet">(480 x 500)</small></h2>
-								<iframe id="tablet" data-ng-src="{{urlLink}}" width="495" height="500"></iframe>
-							</div>
-							<div class="box">
-								<h2>iPad <small class="size-ipad">(768 x 500)</small></h2>
-								<iframe id="ipad" data-ng-src="{{urlLink}}" width="783" height="500"></iframe>
+						<div class="test-area" data-ng-controller="TestareaCtrl">
+							<div class="box" data-ng-repeat="screen in screenSizes">
+								<h2>{{screen.name}} <small class="size-iphone">({{screen.width}} x {{screen.height}})</small></h2>
+								<iframe id="{{screen.iframeId}}" data-ng-src="{{urlLink}}" width="{{screen.width + 15}}" height="{{screen.height}}"></iframe>
 							</div>
 						</div>
 					</div>
@@ -82,5 +74,6 @@
 		<script src="js/app.js"></script>
 		<script src="js/directives/httpPrefix.js"></script>
 		<script src="js/controllers/settings.js"></script>
+		<script src="js/controllers/testarea.js"></script>
 	</body>
 </html>
