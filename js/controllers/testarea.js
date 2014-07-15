@@ -9,19 +9,22 @@ angular.module('App')
     name: 'iPhone',
     width: 320,
     height: 500,
-    iframeId: 'iphone'
+    iframeId: 'iphone',
+    boxClass: 'box-iphone'
   },
   {
     name: 'tablet',
     width: 480,
     height: 500,
-    iframeId: 'tablet'
+    iframeId: 'tablet',
+    boxClass: 'box-tablet'
   },
   {
     name: 'iPad',
     width: 768,
     height: 500,
-    iframeId: 'ipad'
+    iframeId: 'ipad',
+    boxClass: 'box-ipad'
   }
   ]
 

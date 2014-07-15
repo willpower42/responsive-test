@@ -1,5 +1,5 @@
 /*
- Version: 0.1.2a
+ Version: 0.2a
   Author: Felipe Nunes
  Website: http://www.willpower.art.br
   github: http://willpowerart.github.io

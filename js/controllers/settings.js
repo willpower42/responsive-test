@@ -6,9 +6,9 @@ angular.module('App')
 
   $scope.setOnlyWidth = function() {
     $('#iphone,#tablet,#ipad').attr('height','500');
-    $('.size-iphone').html('(320 x 500)');
-    $('.size-tablet').html('(480 x 500)');
-    $('.size-ipad').html('(768 x 500)');
+    $('.box-iphone .frame-size').html('(320 x 500)');
+    $('.box-tablet .frame-size').html('(480 x 500)');
+    $('.box-ipad .frame-size').html('(768 x 500)');
   };
 
   $scope.setScreenSize = function() {
@@ -16,8 +16,8 @@ angular.module('App')
     $('#tablet').attr('height','640');
     $('#ipad').attr('height','1024');
 
-    $('.size-iphone').html('(320 x 480)');
-    $('.size-tablet').html('(480 x 640)');
-    $('.size-ipad').html('(768 x 1024)');
+    $('.box-iphone .frame-size').html('(320 x 480)');
+    $('.box-tablet .frame-size').html('(480 x 640)');
+    $('.box-ipad .frame-size').html('(768 x 1024)');
   };
 });
