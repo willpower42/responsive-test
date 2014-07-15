@@ -18,7 +18,7 @@
 			</header>
 			<main id="main-content">
 				<div data-ng-app="App">
-					<div data-ng-controller="Ctrl" data-ng-init="init()">
+					<div data-ng-controller="SettingsCtrl">
 						<form name="url">
 							<fieldset class="fs">
 								<ul class="lst-fs">
@@ -28,12 +28,12 @@
 										</label>
 									</li>
 									<li class="it-fs">
-										<label id="width">
+										<label id="width" data-ng-click="setOnlyWidth()">
 											<input type="radio" name="width-size" checked>
 											<span class="lbl">only width</span>
 											<small>(plus 15px for scroll)</small>
 										</label>
-										<label id="size">
+										<label id="size" data-ng-click="setScreenSize()">
 											<input type="radio" name="width-size">
 											<span class="lbl">screen size</span>
 											<small>(plus 15px for scroll)</small>
@@ -79,6 +79,6 @@
 		<script src="http://code.angularjs.org/1.1.0/angular.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/directives/httpPrefix.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/controllers/settings.js"></script>
 	</body>
 </html>
