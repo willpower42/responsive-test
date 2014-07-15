@@ -11,7 +11,7 @@ ul,li {list-style:none;}
 label {display:block;}
 input,.lbl {vertical-align: middle;}
 
-body {font-family:helvetica,arial,sans-serif;} 
+body {font-family:helvetica,arial,sans-serif;}
 #main-header,#main-footer,.test-area {margin:0 0 10px;}
 
 header,main {padding:10px;border-bottom:1px solid #ccc;}
@@ -29,3 +29,7 @@ small {color:#999;}
 .box {display:inline-block;vertical-align:top;}
 iframe {border:1px solid #000;}
 .test-area {width:100%;overflow:auto;white-space:nowrap;}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
