@@ -14,6 +14,12 @@ angular.module('App')
 
         $scope.urlLink = "www.willpower.art.br/v7";
 
+        $scope.reload = function () {
+            $('.test-area').find('iframe').attr('src', function (i, val) {
+                return val;
+            });
+        };
+
         $scope.setOnlyWidth = function () {
             $('#iphone,#tablet,#ipad').attr('height', '500');
             $('.box-iphone .frame-size').html('(320 x 500)');
