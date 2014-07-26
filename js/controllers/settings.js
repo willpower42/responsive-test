@@ -1,23 +1,33 @@
-
 angular.module('App')
-.controller('SettingsCtrl', function($scope) {
+    .controller('SettingsCtrl', function ($scope, $rootScope) {
 
-  $scope.urlLink = "www.willpower.art.br/v7";
+        $scope.$watch('urlLink', function () {
+            if ($scope.delayedTimeout) {
+                window.clearInterval($scope.delayedTimeout);
+            }
+            $scope.delayedTimeout = window.setTimeout(function () {
+                $rootScope.$apply(function () {
+                    $scope.delayedUrlLink = $scope.urlLink;
+                });
+            }, 1000);
+        });
 
-  $scope.setOnlyWidth = function() {
-    $('#iphone,#tablet,#ipad').attr('height','500');
-    $('.box-iphone .frame-size').html('(320 x 500)');
-    $('.box-tablet .frame-size').html('(480 x 500)');
-    $('.box-ipad .frame-size').html('(768 x 500)');
-  };
+        $scope.urlLink = "www.willpower.art.br/v7";
 
-  $scope.setScreenSize = function() {
-    $('#iphone').attr('height','480');
-    $('#tablet').attr('height','640');
-    $('#ipad').attr('height','1024');
+        $scope.setOnlyWidth = function () {
+            $('#iphone,#tablet,#ipad').attr('height', '500');
+            $('.box-iphone .frame-size').html('(320 x 500)');
+            $('.box-tablet .frame-size').html('(480 x 500)');
+            $('.box-ipad .frame-size').html('(768 x 500)');
+        };
 
-    $('.box-iphone .frame-size').html('(320 x 480)');
-    $('.box-tablet .frame-size').html('(480 x 640)');
-    $('.box-ipad .frame-size').html('(768 x 1024)');
-  };
-});
+        $scope.setScreenSize = function () {
+            $('#iphone').attr('height', '480');
+            $('#tablet').attr('height', '640');
+            $('#ipad').attr('height', '1024');
+
+            $('.box-iphone .frame-size').html('(320 x 480)');
+            $('.box-tablet .frame-size').html('(480 x 640)');
+            $('.box-ipad .frame-size').html('(768 x 1024)');
+        };
+    });

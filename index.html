@@ -59,7 +59,7 @@
 					<div class="test-area" data-ng-controller="TestareaCtrl">
 						<div class="box {{screen.boxClass}}" data-ng-repeat="screen in screenSizes">
 							<h2>{{screen.name}} <small class="frame-size">({{screen.width}} x {{screen.height}})</small></h2>
-							<iframe id="{{screen.iframeId}}" data-ng-src="{{urlLink}}" width="{{screen.width + 15}}" height="{{screen.height}}"></iframe>
+							<iframe id="{{screen.iframeId}}" data-ng-src="{{delayedUrlLink}}" width="{{screen.width + 15}}" height="{{screen.height}}"></iframe>
 						</div>
 					</div>
 				</div>
