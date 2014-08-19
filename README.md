@@ -1,5 +1,8 @@
 #willpower responsive test
-===============
+
+##v0.3a
+- added a delay to load page when typing an url
+- reload button
 
 ##v0.2a
 - separating directive from app declaration file

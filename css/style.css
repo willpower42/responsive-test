@@ -1,38 +1,68 @@
 /*
- Version: 0.2a
+ Version: 0.3a
   Author: Felipe Nunes
  Website: http://www.willpower.art.br
   github: http://willpowerart.github.io
 */
 
+html, button, input, select, textarea,
+.wgrid [class *= "wg"] {
+    font-family:'Roboto',helvetica,arial,sans-serif;
+}
+
 * {margin:0;padding:0;box-sizing:border-box;}
-fieldset {border:0;}
+fieldset {border:0;margin:0;padding:0;}
 ul,li {list-style:none;}
 label {display:block;padding-left:5px;}
 input,.lbl {vertical-align: middle;}
+a {color:#369;}
 
-body {font-family:helvetica,arial,sans-serif;}
+body {font-family:'Roboto',helvetica,arial,sans-serif;}
 #main-header,#main-footer,.test-area {margin:0 0 10px;}
 
 header,main {padding:10px;border-bottom:1px solid #ccc;}
-h1 {background:url(../images/willpower.png) no-repeat 0 0;padding-left:235px;height:47px;line-height:47px;}
+.logo {background:url(../images/willpower.png) no-repeat 0 0;padding-left:55px;height:47px;line-height:47px;font-size:1em;text-decoration:none;}
+.logo h1 {display:block;background:#fff;color:#888;margin:0;line-height:1.4;font-size:18px;}
+.logo .v {font-size:12px;color:#aaa;display:block;}
 
-.copy {display:block;text-align:center;padding:10px;}
-.copy .tx {display:block;}
+.url-link {font-size:2em;width:100%;height:41px;line-height:41px;}
 
-.it-fs:first-child {float:left;width:70%;}
-.it-fs:nth-child(2) {overflow:hidden;}
-.it-fs:nth-child(2) label {margin:10px 0 0;}
-.it-fs:nth-child(2) label:first-child {margin:0;}
+.it-fs {letter-spacing:-.31em;margin:10px 0;}
+.it-fs label {letter-spacing:0;display:inline-block;vertical-align:top;}
+
+.it-fs:first-child {padding-right:66px;}
+.it-fs:first-child label {padding:0;width:100%;}
+.it-fs:first-child .reload {margin-right:-66px;display:inline-block;}
+
+.reload {font-size:30px;}
+.reload .bt {height:41px;width:41px;line-height:41px;}
+
+.it-fs small {display:block;margin:0 0 5px 16px;font-size:12px;}
 
 small {color:#999;}
-
-.url-link {font-size:2em;width:95%;}
 
 .box {display:inline-block;vertical-align:top;margin:10px 5px 0 0;}
 iframe {border:1px solid #000;}
 .test-area {width:100%;overflow:auto;white-space:nowrap;}
 
+.copy {display:block;text-align:center;padding:10px;}
+.copy .tx {display:block;}
+.copy .t {font-weight:normal;}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+@media screen and (max-width:48em) {
+	.url-link {font-size:16px;}
+	.copy .lnk {display:block;}
+}
+
+@media screen and (min-width:64em){
+	.logo .v {display:inline;}
+	.it-fs {margin:0;}
+}
+
+@media screen and (min-width:85.375em){
+	.logo .v {display:block;}
 }
