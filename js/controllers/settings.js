@@ -12,7 +12,7 @@ angular.module('App')
             }, 1000);
         });
 
-        $scope.urlLink = "www.willpower.art.br/v7";
+        $scope.urlLink = "www.willpower.art.br";
 
         $scope.reload = function () {
             $('.test-area').find('iframe').attr('src', function (i, val) {
